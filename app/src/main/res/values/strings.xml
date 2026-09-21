@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">App-ROmantica</string>
+    <string name="boton_volver">← Volver</string>
+    <string name="input_mensaje_hint">Escríbele algo bonito...</string>
+    <string name="bton_enviar">Enviar</string>
+    <string name="bton_volver">Volver al menú</string>
+    <string name="estado">Estado emocional 😊</string>
+    <string name="animo">Ánimo</string>
+    <string name="triste">😔</string>
+    <string name="texto_triste">triste</string>
+    <string name="normal">🙂</string>
+    <string name="texto_normal">normal</string>
+    <string name="feliz">😄</string>
+    <string name="texto_feliz">feliz</string>
+    <string name="estresado">😵</string>
+    <string name="texto_estresado">estresado</string>
+    <string name="estres">Estrés</string>
+    <string name="texto_relajado">relajado</string>
+    <string name="relajado">😌</string>
+    <string name="error_servidor_estado">Estado guardado en este dispositivo. El servidor aún no publica /estado.</string>
+    <string name="formato_estado_actual">Estado actual: %1$s / %2$s</string>
+    <string name="nuestras_fotos">Nuestras Fotos 📸</string>
+    <string name="subir_foto">Subir Foto</string>
+    <string name="configuracion_secreta">Configuración Secreta 🤫</string>
+    <string name="quien_usa_celular">¿Quién está usando este celular?</string>
+    <string name="boton_juan_carlos">Juan 💙</string>
+    <string name="boton_roro">Roro ❤️</string>
+    <string name="cambio_frase">¿Quieres cambiar la frase de hoy?</string>
+    <string name="frase_del_dia">Frase del día ✨</string>
+    <string name="bton_te_quiero">Te quiero 🤍</string>
+    <string name="frase_del_dia_guardada">Frase del día guardada:</string>
+    <string name="bton_guardar_frase">Guardar frase</string>
+    <string name="bton_entrar">Entrar</string>
+    <string name="para_ti">Para Ti 🤍</string>
+    <string name="contadores">Contadores</string>
+    <string name="te_amo">Te amo</string>
+    <string name="te_extraño_emoji">🥺</string>
+    <string name="te_extraño">Te extraño</string>
+    <string name="te_amo_emoji">❤️</string>
+    <string name="toma_agua_emoji">💧</string>
+    <string name="toma_agua">Toma agua</string>
+    <string name="buen_dia_emoji">🌞</string>
+    <string name="buen_dia">Buenos días.</string>
+    <string name="buenas_noches_emoji">🌙</string>
+    <string name="buenas_noches">Buenas noches</string>
+    <string name="te_admira_emoji">😍</string>
+    <string name="te_admira">Te admira</string>
+    <string name="recuerdos">Recuerdos</string>
+    <string name="me_recuerda_emoji">📸</string>
+    <string name="me_recuerda">Me recuerda a ti </string>
+    <string name="buzon_emoji">💌</string>
+    <string name="buzon">Buzón de mensajes</string>
+    s<string name="estado_emocional">Estado emocional</string>
+
+
+
+</resources>

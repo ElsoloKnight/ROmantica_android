@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/rosa_fondo"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Grupo: pantalla de bienvenida (cuando ya hay rol guardado) -->
+        <LinearLayout
+            android:id="@+id/grupoBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/white"
+                android:elevation="6dp"
+                android:padding="24dp"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:id="@+id/tvFraseDelDia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frase_del_dia"
+                    android:textColor="@color/rosa_acento"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+
+                <ProgressBar
+                    android:id="@+id/progresoFrase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textoFrase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gris_texto"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBotonTeQuiero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bton_te_quiero"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/rosa_acento"
+                android:paddingHorizontal="48dp"
+                android:paddingVertical="16dp" />
+            <!-- Cambio de frase (solo visible si rolSeleccionado = juan_carlos) -->
+            <LinearLayout
+                android:id="@+id/grupoCambioFrase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tvCambioFrase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cambio_frase"
+                    android:textColor="@color/gris_texto"
+                    android:layout_marginBottom="12dp" />
+
+                <EditText
+                    android:id="@+id/inputFrase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="3"
+                    android:gravity="top|start"
+                    android:hint="@string/input_mensaje_hint"
+                    android:background="@color/white"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/tvTextoAviso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frase_del_dia_guardada"
+                    android:textColor="@color/gris_texto"
+                    android:visibility="gone"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btnBonGuardarFrase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bton_guardar_frase"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/rosa_acento" />
+
+                <TextView
+                    android:id="@+id/textoErrorFrase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rojo_error"
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Grupo: configuración secreta (cuando no hay rol guardado) -->
+        <LinearLayout
+            android:id="@+id/grupoConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvConfiguracionSecreta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/configuracion_secreta"
+                android:textColor="@color/rosa_acento"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvQuienUsaCelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quien_usa_celular"
+                android:textColor="@color/gris_texto"
+                android:textStyle="italic"
+                android:layout_marginBottom="40dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/botonJuanCarlos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/boton_juan_carlos"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/rosa_seleccion"
+                    android:textColor="@color/gris_medio" />
+
+                <Button
+                    android:id="@+id/botonRoro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/boton_roro"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/rosa_seleccion"
+                    android:textColor="@color/gris_medio" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btnBotonEntrar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bton_entrar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/rosa_acento"
+                android:paddingVertical="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

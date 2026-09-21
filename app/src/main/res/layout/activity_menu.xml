@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rosa_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvParaTi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/para_ti"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvContadores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contadores"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/gris_texto"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Contenedor de las cards de contadores (3 arriba, 2 abajo) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <!-- Fila superior: 3 cards -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- 1. cardTeExtrano -->
+                <LinearLayout
+                    android:id="@+id/cardTeExtrano"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvTeExtrano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/te_extraño_emoji"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/tvTeExtranoTexto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/te_extraño"
+                        android:textColor="@color/gris_medio" />
+
+                    <TextView
+                        android:id="@+id/numeroTeExtrano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="0"
+                        android:textColor="@color/rosa_acento"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- 2. cardTomaAgua -->
+                <LinearLayout
+                    android:id="@+id/cardTomaAgua"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvTomaAgua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/toma_agua_emoji"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/tvTomaAguaTexto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/toma_agua"
+                        android:textColor="@color/gris_medio" />
+
+                    <TextView
+                        android:id="@+id/numeroTomaAgua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="0"
+                        android:textColor="@color/rosa_acento"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- 3. cardTeAmo -->
+                <LinearLayout
+                    android:id="@+id/cardTeAmo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvTeAmo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/te_amo_emoji"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/tvTeAmoTexto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/te_amo"
+                        android:textColor="@color/gris_medio" />
+
+                    <TextView
+                        android:id="@+id/numeroTeAmo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="0"
+                        android:textColor="@color/rosa_acento"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Fila inferior: 2 cards -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <!-- 4. cardBuenDia -->
+                <LinearLayout
+                    android:id="@+id/cardBuenDia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvBuenDia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/buen_dia_emoji"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/tvBuenDiaTexto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/buen_dia"
+                        android:textColor="@color/gris_medio" />
+
+                    <TextView
+                        android:id="@+id/numeroBuenDia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="0"
+                        android:textColor="@color/rosa_acento"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- 5. cardTeAdmira -->
+                <LinearLayout
+                    android:id="@+id/cardTeAdmira"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvTeAdmira"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/te_admira_emoji"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/tvTeAdmiraTexto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/te_admira"
+                        android:textColor="@color/gris_medio" />
+
+                    <TextView
+                        android:id="@+id/numeroTeAdmira"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="0"
+                        android:textColor="@color/rosa_acento"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRecuerdos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recuerdos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/gris_texto"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/cardGaleria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp">
+            <TextView android:id="@+id/tvGaleria" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/me_recuerda_emoji" android:textSize="32sp" />
+            <TextView android:id="@+id/tvMeRecuerdanATi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/me_recuerda" android:textColor="@color/gris_medio" android:textSize="16sp" android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardBuzon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp">
+            <TextView android:id="@+id/tvBuzon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buzon_emoji" android:textSize="32sp" />
+            <TextView android:id="@+id/tvBuzonDeMensajes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buzon" android:textColor="@color/gris_medio" android:textSize="16sp" android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp">
+            <TextView android:id="@+id/tvEstado" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/estado_emoji" android:textSize="32sp" />
+            <TextView android:id="@+id/tvEstadoEmocional" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Estado emocional" android:textColor="@color/gris_medio" android:textSize="16sp" android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/botonVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al inicio"
+            android:textAllCaps="false"
+            android:textColor="@color/rosa_acento"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

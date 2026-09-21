@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/rosa_fondo"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="35dp">
+
+        <TextView
+            android:id="@+id/btnBotonVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_volver"
+            android:textColor="@color/rosa_acento"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/estado"
+            android:textColor="@color/gris_oscuro"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center" />
+
+        <View android:layout_width="60dp" android:layout_height="1dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAnimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/animo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/gris_texto"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp">
+
+        <LinearLayout android:id="@+id/opcionTriste" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="4dp" android:orientation="vertical" android:gravity="center" android:background="@color/white" android:padding="14dp">
+            <TextView android:id="@+id/tvTriste" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/triste" android:textSize="28sp" />
+            <TextView android:id="@+id/tvTristeTexto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="triste" android:textColor="@color/gris_medio" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/opcionNormalAnimo" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginHorizontal="4dp" android:orientation="vertical" android:gravity="center" android:background="@color/rosa_seleccion" android:padding="14dp">
+            <TextView android:id="@+id/tvNormal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/normal" android:textSize="28sp" />
+            <TextView android:id="@+id/tvNormalTexto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/texto_normal" android:textColor="@color/gris_medio" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/opcionFeliz" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="4dp" android:orientation="vertical" android:gravity="center" android:background="@color/white" android:padding="14dp">
+            <TextView android:id="@+id/tvFeliz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feliz" android:textSize="28sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="feliz" android:textColor="@color/gris_medio" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/estres"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/gris_texto"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp">
+
+        <LinearLayout android:id="@+id/opcionRelajado" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="4dp" android:orientation="vertical" android:gravity="center" android:background="@color/white" android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="estresado"
+                android:textColor="@color/gris_medio" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="😵"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/opcionNormalEstres" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginHorizontal="4dp" android:orientation="vertical" android:gravity="center" android:background="@color/rosa_seleccion" android:padding="14dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😐" android:textSize="28sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="normal" android:textColor="@color/gris_medio" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/opcionEstresado" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="4dp" android:orientation="vertical" android:gravity="center" android:background="@color/white" android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="😌"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="relajado"
+                android:textColor="@color/gris_medio" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textoEstadoActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado actual: normal / normal"
+        android:textColor="@color/gris_texto"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textoInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardando..."
+        android:textColor="@color/gris_texto"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textoError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/rojo_error"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
