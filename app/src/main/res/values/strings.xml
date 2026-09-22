@@ -50,7 +50,9 @@
     <string name="me_recuerda">Me recuerda a ti </string>
     <string name="buzon_emoji">💌</string>
     <string name="buzon">Buzón de mensajes</string>
-    s<string name="estado_emocional">Estado emocional</string>
+    <string name="estado_emocional">Estado emocional</string>
+    <string name="estado_emocional_emoji"> 😊</string>
+    <string name="volver_al_inicio"> Volver al inicio</string>
 
 
 
